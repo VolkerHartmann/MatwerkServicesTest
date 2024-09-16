@@ -13,3 +13,15 @@ https://hurl.dev/docs/installation.html
 ### Frontend-collection
 
 ### MetaStore
+
+## How to Test
+To test all services just call
+´´´
+$ hurl .
+```
+
+For testing a single service call
+´´´
+$ hurl testMY_SERVICE.hurl
+```
+
