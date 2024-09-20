@@ -60,7 +60,7 @@ HTTP 200
 
 ## Test getting metadata documents and landing page
 ###############################################################################################
-GET https://matwerk.datamanager.kit.edu/metastore/api/v1/metadata
+GET https://matwerk.datamanager.kit.edu/metastore/api/v1/metadata/
 HTTP 200
 [Asserts]
 jsonpath "$" count > 0 # Check for at least one public available metadata
