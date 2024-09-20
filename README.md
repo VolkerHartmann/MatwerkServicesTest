@@ -16,12 +16,13 @@ https://hurl.dev/docs/installation.html
 
 ## How to Test
 To test all services just call
-´´´
+```
 $ hurl --test .
-´´´
+```
 
 For testing a single service call
-´´´
+```
 $ hurl testMY_SERVICE.hurl
 ```
+
 
