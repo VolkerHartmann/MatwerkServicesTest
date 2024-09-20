@@ -20,7 +20,7 @@ GET https://matwerk.datamanager.kit.edu:8040/actuator/info
 HTTP 200
 [Asserts]
 jsonpath "$.build.name" == "metastore2" # Check name
-jsonpath "$.build.version" matches  "[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*" # Check for valid version (no snapshot)
+jsonpath "$.build.version" matches  "[0-9]+.[0-9]+.[0-9]+" # Check for valid version (no snapshot)
 
 GET https://matwerk.datamanager.kit.edu:8040/actuator/health
 HTTP 200
@@ -33,7 +33,7 @@ GET https://matwerk.datamanager.kit.edu/metastore/actuator/info
 HTTP 200
 [Asserts]
 jsonpath "$.build.name" == "metastore2" # Check name
-jsonpath "$.build.version" matches  "[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*" # Check for valid version (no snapshot)
+jsonpath "$.build.version" matches  "[0-9]+.[0-9]+.[0-9]+" # Check for valid version (no snapshot)
 
 ## Test getting schema documents and landing page
 ###############################################################################################

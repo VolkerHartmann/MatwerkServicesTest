@@ -20,7 +20,7 @@ GET https://matwerk.datamanager.kit.edu:8090/actuator/info
 HTTP 200
 [Asserts]
 jsonpath "$.build.name" == "base-repo" # Check name
-jsonpath "$.build.version" matches  "[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*" # Check for valid version (no snapshot)
+jsonpath "$.build.version" matches  "[0-9]+.[0-9]+.[0-9]+" # Check for valid version (no snapshot)
 
 GET https://matwerk.datamanager.kit.edu:8090/actuator/health
 HTTP 200
@@ -33,7 +33,7 @@ GET https://matwerk.datamanager.kit.edu/baserepo/actuator/info
 HTTP 200
 [Asserts]
 jsonpath "$.build.name" == "base-repo" # Check name
-jsonpath "$.build.version" matches  "[0-9][0-9]*.[0-9][0-9]*.[0-9][0-9]*" # Check for valid version (no snapshot)
+jsonpath "$.build.version" matches  "[0-9]+.[0-9]+.[0-9]+" # Check for valid version (no snapshot)
 
 ## Test getting dataresources
 ###############################################################################################
