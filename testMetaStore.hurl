@@ -80,3 +80,12 @@ HTTP 302
 landing_url_metadata: header "Location"
 GET {{landing_url_metadata}}
 HTTP 200
+
+
+## Test search
+###############################################################################################
+POST https://matwerk.datamanager.kit.edu/metastore/api/v1/search
+{}
+HTTP 200
+[Asserts]
+jsonpath "$.hits" exists # Check for hits
