@@ -8,9 +8,6 @@
 GET http://matwerk.datamanager.kit.edu:8000/
 HTTP 302
 
-GET http://matwerk.datamanager.kit.edu:8000/index.html
-HTTP 200
-
 GET http://matwerk.datamanager.kit.edu:8000/login
 HTTP 200
 [Asserts]
